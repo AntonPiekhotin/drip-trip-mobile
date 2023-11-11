@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">DripTrip</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="confirm_your_password">Confirm your password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_second_name">Enter your second name</string>
+    <string name="enter_your_first_name">Enter your first name</string>
+    <string name="enter_your_login">Enter your login</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="drip_trip">DriP TriP</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login">Login</string>
 </resources>
