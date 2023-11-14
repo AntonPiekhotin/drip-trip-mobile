@@ -13,24 +13,29 @@
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="200dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
         android:text="@string/welcome_back"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="32sp" />
+        android:textSize="32sp"
+        app:fontFamily="@font/squada_one" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:text="image" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/app_logo"
+        android:layout_marginBottom="65dp"
+        />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:textColor="#000000"
         android:background="@drawable/rounded_shape"
+        android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_login"
         android:minHeight="48dp"
         android:textColorHint="#adadad" />
@@ -39,8 +44,10 @@
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
         android:background="@drawable/rounded_shape"
+        android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
@@ -48,11 +55,12 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="match_parent"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/rounded_shape"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_shape_button"
         android:backgroundTint="#000000"
+        android:fontFamily="@font/squada_one"
         android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="#ffffff"
@@ -63,9 +71,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:layout_marginTop="5dp"
         android:minHeight="48dp"
         android:text="@string/register"
         android:textColor="#666666"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        app:fontFamily="@font/squada_one" />
 
 </LinearLayout>
