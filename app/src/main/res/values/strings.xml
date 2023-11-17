@@ -13,4 +13,10 @@
     <string name="drip_trip">DriP TriP</string>
     <string name="welcome_back">Welcome Back!</string>
     <string name="login">Login</string>
+    <string name="available">Available</string>
+    <string name="palochka">|</string>
+    <string name="taken">Taken</string>
+    <string name="take">Take</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
 </resources>
