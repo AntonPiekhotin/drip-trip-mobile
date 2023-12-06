@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registration_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f6f6f6"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="45dp"
-    android:id="@+id/registration_view"
-    android:background="#f6f6f6"
-    >
+    android:padding="45dp">
 
 
     <TextView
@@ -17,8 +16,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:text="@string/welcome_to"
         android:fontFamily="@font/squada_one"
+        android:text="@string/welcome_to"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="38sp" />
@@ -28,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
-        android:text="@string/drip_trip"
         android:fontFamily="@font/squada_one"
+        android:text="@string/drip_trip"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="65sp" />
@@ -38,36 +37,36 @@
         android:id="@+id/et_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_login"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#adadad" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_first_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_first_name"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#adadad" />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/et_second_name"
+        android:id="@+id/et_last_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_second_name"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#adadad" />
 
 
@@ -75,12 +74,12 @@
         android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_email"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#adadad" />
 
 
@@ -88,28 +87,27 @@
         android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/enter_your_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textColor="#000000"
         android:textColorHint="#adadad" />
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/et_password2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
         android:hint="@string/confirm_your_password"
         android:inputType="textPassword"
         android:minHeight="48dp"
-        android:textColorHint="#adadad"
-        />
+        android:textColor="#000000"
+        android:textColorHint="#adadad" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_register"
@@ -118,8 +116,8 @@
         android:layout_marginTop="35dp"
         android:background="@drawable/rounded_shape_button"
         android:backgroundTint="#000000"
-        android:text="@string/register"
         android:fontFamily="@font/squada_one"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="24sp" />
@@ -129,10 +127,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:fontFamily="@font/squada_one"
         android:gravity="center"
         android:minHeight="48dp"
         android:text="@string/sign_in"
-        android:fontFamily="@font/squada_one"
         android:textColor="#666666"
         android:textSize="20sp" />
 

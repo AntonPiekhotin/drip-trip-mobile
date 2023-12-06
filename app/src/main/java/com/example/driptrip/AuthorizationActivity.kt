@@ -28,9 +28,7 @@ class AuthorizationActivity : AppCompatActivity() {
             val email = etEmail.text.toString()
             val password = etPassword.text.toString()
 
-            //TODO: Авторизувати користувача
         }
-
         btnToRegistration.setOnClickListener {
             startActivity(Intent(this, RegistrationActivity::class.java))
         }
