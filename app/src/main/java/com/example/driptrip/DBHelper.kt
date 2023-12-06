@@ -28,12 +28,12 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
-        val createTableQuery =
-            ("CREATE TABLE $TABLE_USERS ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "$COLUMN_USERNAME TEXT, $COLUMN_PASSWORD TEXT, " +
-                    "$COLUMN_EMAIL TEXT, $COLUMN_FIRST_NAME TEXT, " +
-                    "$COLUMN_LAST_NAME TEXT, $COLUMN_DATE_JOINED DATETIME)")
-        db?.execSQL(createTableQuery)
+//        val createTableQuery =
+//            ("CREATE TABLE IF NOT EXISTS $TABLE_USERS ($COLUMN_ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+//                    "$COLUMN_USERNAME TEXT, $COLUMN_PASSWORD TEXT, " +
+//                    "$COLUMN_EMAIL TEXT, $COLUMN_FIRST_NAME TEXT, " +
+//                    "$COLUMN_LAST_NAME TEXT, $COLUMN_DATE_JOINED DATETIME)")
+//        db?.execSQL(createTableQuery)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {

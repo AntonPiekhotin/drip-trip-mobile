@@ -63,6 +63,9 @@ class RegistrationActivity : AppCompatActivity() {
                 values.put(DBHelper.COLUMN_FIRST_NAME, firstName)
                 values.put(DBHelper.COLUMN_LAST_NAME, lastName)
                 values.put(DBHelper.COLUMN_DATE_JOINED, dateTime)
+                values.put(DBHelper.COLUMN_IS_STAFF, false)
+                values.put(DBHelper.COLUMN_IS_SUPERUSER, false)
+                values.put(DBHelper.COLUMN_IS_ACTIVE, true)
 
                 val result = database!!.insert(DBHelper.TABLE_USERS, null, values)
                 database.close()

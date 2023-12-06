@@ -19,4 +19,6 @@
     <string name="take">Take</string>
     <string name="done">Done</string>
     <string name="cancel">Cancel</string>
+    <string name="enter_your_lastname">Enter your lastname</string>
+    <string name="enter_your_firstname">Enter your firstname</string>
 </resources>

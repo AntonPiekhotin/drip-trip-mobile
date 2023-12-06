@@ -52,7 +52,7 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
-        android:hint="@string/enter_your_first_name"
+        android:hint="@string/enter_your_firstname"
         android:minHeight="48dp"
         android:textColor="#000000"
         android:textColorHint="#adadad" />
@@ -64,7 +64,7 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/rounded_shape"
         android:fontFamily="@font/antic_slab"
-        android:hint="@string/enter_your_second_name"
+        android:hint="@string/enter_your_lastname"
         android:minHeight="48dp"
         android:textColor="#000000"
         android:textColorHint="#adadad" />
