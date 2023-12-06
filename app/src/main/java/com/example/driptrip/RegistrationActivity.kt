@@ -68,13 +68,14 @@ class RegistrationActivity : AppCompatActivity() {
                 database.close()
 
                 if (result != -1L) {
-                    etUsername.setText("")
-                    etEmail.setText("")
-                    etPassword.setText("")
-                    etLastName.setText("")
-                    etFirstName.setText("")
-                    etPassword2.setText("")
+//                    etUsername.setText("")
+//                    etEmail.setText("")
+//                    etPassword.setText("")
+//                    etLastName.setText("")
+//                    etFirstName.setText("")
+//                    etPassword2.setText("")
                     Toast.makeText(this, "User registered!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, OrdersAvailableActivity::class.java))
                 } else {
                     Toast.makeText(this, "Error occured", Toast.LENGTH_SHORT).show()
                 }
