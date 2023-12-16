@@ -80,7 +80,7 @@ class RegistrationActivity : AppCompatActivity() {
                     Toast.makeText(this, "User registered!", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this, OrdersAvailableActivity::class.java))
                 } else {
-                    Toast.makeText(this, "Error occured", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Error occurred", Toast.LENGTH_SHORT).show()
                 }
             }
         }
