@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/materialCardView"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginTop="10dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:strokeColor="#000000"
+    app:strokeWidth="1dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/orderImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/nike" />
+
+    <TextView
+        android:id="@+id/sellerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/squada_one"
+        android:text="Seller: lalala baba, +123123123"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/buyerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/squada_one"
+        android:text="Buyer: lalala baba, +123123123"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/toTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/squada_one"
+        android:maxWidth="300dp"
+        android:text="To: Kharkiv"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/squada_one"
+        android:text="13.11.2023"
+        android:textColor="#656565" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/orderIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/squada_one"
+        android:text="Order № 10235"
+        android:textColor="#000000" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/takeButton"
+        android:layout_width="74dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="98dp"
+        android:background="@drawable/rounded_shape_button"
+        android:backgroundTint="#000000"
+        android:fontFamily="@font/squada_one"
+        android:text="@string/take"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+</com.google.android.material.card.MaterialCardView>
+
