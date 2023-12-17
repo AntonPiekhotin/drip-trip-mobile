@@ -68,5 +68,23 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         return userId
     }
 
+    fun cancelOrder(orderId: Int): Boolean {
+        val values = ContentValues().apply {
+            put("status", "New")
+            put("usercourier_id", "")
+        }
+        val selection = "id = ?"
+        val selectionArgs = arrayOf(orderId.toString())
+        writableDatabase.update("drip_order", values, selection, selectionArgs)
+        return true;
+    }
 
+    fun doneOrder(orderId: Int) {
+        val values = ContentValues().apply {
+            put("status", "Done")
+        }
+        val selection = "id = ?"
+        val selectionArgs = arrayOf(orderId.toString())
+        writableDatabase.update("drip_order", values, selection, selectionArgs)
+    }
 }
