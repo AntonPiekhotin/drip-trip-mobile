@@ -39,4 +39,34 @@ class DBHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
     }
 
+    fun setOrderStatusToActive(orderId: Int) {
+        val values = ContentValues().apply {
+            put("status", "Active")
+            put("usercourier_id", DripTripApp.userId)
+        }
+        val selection = "id = ?"
+        val selectionArgs = arrayOf(orderId.toString())
+
+        writableDatabase.update("drip_order", values, selection, selectionArgs)
+    }
+
+    fun getUserId(email: String): Int {
+        val db = this.readableDatabase
+        var userId = -1
+
+        val query = "SELECT id FROM auth_user WHERE email = ?"
+        val cursor = db.rawQuery(query, arrayOf(email))
+
+        if (cursor.moveToFirst()) {
+            val idIndex = cursor.getColumnIndex("id")
+            if (idIndex >= 0) {
+                userId = cursor.getInt(idIndex)
+            }
+        }
+        cursor.close()
+        db.close()
+        return userId
+    }
+
+
 }

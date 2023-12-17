@@ -78,6 +78,10 @@ class RegistrationActivity : AppCompatActivity() {
 //                    etFirstName.setText("")
 //                    etPassword2.setText("")
                     Toast.makeText(this, "User registered!", Toast.LENGTH_SHORT).show()
+
+                    //store id globally
+                    DripTripApp.userId = dbHelper.getUserId(email);
+
                     startActivity(Intent(this, OrdersAvailableActivity::class.java))
                 } else {
                     Toast.makeText(this, "Error occurred", Toast.LENGTH_SHORT).show()

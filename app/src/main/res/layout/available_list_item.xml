@@ -83,7 +83,8 @@
         android:fontFamily="@font/squada_one"
         android:text="@string/take"
         android:textColor="#ffffff"
-        android:textSize="13sp" />
+        android:textSize="13sp"
+        />
 
 </com.google.android.material.card.MaterialCardView>
 

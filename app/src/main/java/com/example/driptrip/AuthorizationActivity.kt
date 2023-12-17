@@ -33,6 +33,8 @@ class AuthorizationActivity : AppCompatActivity() {
             if (isUserExists(email, password)) {
                 Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
 
+                //store id globally
+                DripTripApp.userId = dbHelper.getUserId(email);
                 startActivity(Intent(this, OrdersAvailableActivity::class.java))
             } else {
                 Toast.makeText(this, "Невірний логін або пароль", Toast.LENGTH_SHORT).show()

@@ -1,17 +1,20 @@
 package com.example.driptrip
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 
 class AvailableOrdersAdapter(private val orderList: List<Order>, private val mContext: Context) :
     RecyclerView.Adapter<AvailableOrdersAdapter.OrderViewHolder>() {
-
+    private var dbHelper: DBHelper = DBHelper(mContext)
 
     class OrderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -21,6 +24,7 @@ class AvailableOrdersAdapter(private val orderList: List<Order>, private val mCo
         var toTextView: TextView = itemView.findViewById(R.id.toTextView)
         var orderIdTextView: TextView = itemView.findViewById(R.id.orderIdTextView)
         var dateTextView: TextView = itemView.findViewById(R.id.dateTextView)
+        var takeButton: Button = itemView.findViewById(R.id.takeButton)
         private lateinit var dbHelper: DBHelper
 
 
@@ -75,6 +79,11 @@ class AvailableOrdersAdapter(private val orderList: List<Order>, private val mCo
     //fill the list
     override fun onBindViewHolder(holder: OrderViewHolder, position: Int) {
         holder.bindData(orderList[position], mContext);
+        holder.takeButton.setOnClickListener {
+            dbHelper.setOrderStatusToActive(orderList[position].orderId)
+            Toast.makeText(mContext, "Замовлення прийнято!", Toast.LENGTH_SHORT).show()
+            mContext.startActivity(Intent(mContext, OrdersAvailableActivity::class.java))
+        }
     }
 
     override fun getItemCount(): Int {
