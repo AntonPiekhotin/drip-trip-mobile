@@ -1,3 +1,3 @@
 # drip-trip-mobile
-uni project
+uni project  
 mobile part for https://github.com/IceZyzel/drip-trip
